@@ -329,6 +329,28 @@ Elaboração e manutenção da documentação técnica do ambiente.</p>
 
       </div>
       <div class="project-grid">
+
+         <article class="project-card">
+          <h3>Vaultwarden DevOps (Docker, AWS EKS, CI/CD, Terraform, ArgoCD)</h3>
+          <p>
+Repositório voltado à implementação de uma aplicação real (Vaultwarden) com pipeline completo de provisionamento e deploy
+em ambiente cloud.
+            
+Provisionamento de infraestrutura na AWS utilizando Terraform, automatizado via GitHub Actions, incluindo configuração
+de recursos e integração com EKS.
+Deploy da aplicação em Kubernetes (EKS) utilizando ArgoCD, seguindo abordagem GitOps para gerenciamento
+declarativo e versionado dos manifests.
+Exposição da aplicação via Ingress (Traefik) com TLS automatizado (cert-manager/Let’s Encrypt), incluindo configuração
+de DNS e acesso seguro externo.
+Implementação de persistência com volumes do Kubernetes integrados à AWS, garantindo armazenamento de
+dados para aplicação stateful.
+
+
+
+</p>
+        </article>
+
+
         <article class="project-card">
           <h3>Alertas críticos por telefonia</h3>
           <p>Integração entre Zabbix, Python e Asterisk para converter eventos críticos em chamadas telefônicas e acelerar resposta a incidentes.</p>
@@ -344,14 +366,102 @@ Elaboração e manutenção da documentação técnica do ambiente.</p>
 
          <article class="project-card">
           <h3>Observabilidade corporativa e administração em escala</h3>
-          <p>Projeto com forte aderência a SRE e operações de plataforma, combinando monitoramento, resposta a incidentes, automação e gestão de infraestrutura.
-
+          <p>Projeto combinando monitoramento, resposta a incidentes, automação e gestão de infraestrutura.
 
 Implantação e evolução do monitoramento com Zabbix, Grafana e Prometheus, estruturando visibilidade sobre servidores, links, serviços e componentes críticos.
 Desenvolvimento de templates, alertas, mapas de topologia e integrações para comunicação automatizada, melhorando detecção proativa de falhas e acompanhamento operacional.
 Uso de Ansible, GPO e scripts em Python para gerenciamento e controle em massa de aproximadamente 500 hosts, demonstrando capacidade de automação, padronização e operação em escala. Projeto com fundamentos de observabilidade, automação operacional, troubleshooting e confiabilidade.
+
 </p>
         </article>
+
+        <article class="project-card">
+          <h3>Observabilidade corporativa e administração em escala</h3>
+          <p>
+        Projeto combinando monitoramento, resposta a incidentes, automação e gestão de infraestrutura.
+
+Implantação e evolução do monitoramento com Zabbix, Grafana e Prometheus, estruturando visibilidade sobre servidores, links, serviços e componentes críticos.
+Desenvolvimento de templates, alertas, mapas de topologia e integrações para comunicação automatizada, melhorando detecção proativa de falhas e acompanhamento operacional.
+Uso de Ansible, GPO e scripts em Python para gerenciamento e controle em massa de aproximadamente 500 hosts, demonstrando capacidade de automação, padronização e operação em escala. Projeto com fundamentos de observabilidade, automação operacional, troubleshooting e confiabilidade.
+
+</p>
+        </article>
+
+
+
+
+                <article class="project-card">
+          <h3>Alertas críticos via chamadas telefônicas com Zabbix + Python + Asterisk</h3>
+          <p>
+Projeto autoral voltado a automação de incidentes e redução de tempo de resposta operacional.
+
+Integração entre Zabbix, Python e Asterisk para transformar eventos críticos em chamadas telefônicas para serviços
+essenciais.
+Aplicado a cenários como disponibilidade de servidores, status de sistemas, disponibilidade de links e temperatura da
+sala de servidores.
+Demonstra capacidade de integrar monitoramento com automação prática, agregando valor real para ambientes que
+exigem resposta rápida a indisponibilidades.
+
+
+</p>
+        </article>
+
+        
+
+
+
+                <article class="project-card">
+          <h3>Monitoramento do IX.br com Python, Zabbix e Grafana</h3>
+          <p>
+
+            Projeto publicado no GitHub com foco em coleta automatizada, integração com observabilidadee descoberta dinâmica de
+itens.
+
+Script em Python realiza web scraping da página de status do IX.br, consolida cada local/serviço em valor binário e
+entrega JSON para coleta pelo Zabbix.
+O desenho do projeto inclui item mestre, LLD (Low-Level Discovery), criação dinâmica de itens e triggers por serviço
+monitorado, demonstrando entendimento prático do ecossistema Zabbix.
+O projeto também contempla visualização em dash
+
+
+</p>
+        </article>
+
+                        <article class="project-card">
+          <h3>Container para monitoramento SQL via ODBC + Shell</h3>
+          <p>
+            Projeto alinhado a práticas de containerização e automação de monitoramento.
+            
+Script em Python realiza web scraping da página de status do IX.br, consolida cada local/serviço em valor binário e
+entrega JSON para coleta pelo Zabbix.
+O desenho do projeto inclui item mestre, LLD (Low-Level Discovery), criação dinâmica de itens e triggers por serviço
+monitorado, demonstrando entendimento prático do ecossistema Zabbix.
+O projeto também contempla visualização em dash
+
+
+</p>
+        </article>
+
+          <article class="project-card">
+          <h3>Kubernetes e deploy de aplicações</h3>
+          <p>
+Repositório voltado a consolidar fundamentos de orquestração, arquitetura e deploy de aplicações em Kubernetes.
+            
+Documentação prática sobre arquitetura de cluster, control plane, workers, pods, deployments, services e fluxo de
+funcionamento do Kubernetes.
+Exploração de deploy de aplicações e principais recursos da plataforma, mostrando dedicação em entender não
+apenas o uso, mas também os conceitos operacionais do ecossistema K8s.
+
+
+
+</p>
+        </article>
+
+
+
+
+
+
       </div>
     </section>
 
