@@ -278,14 +278,14 @@ h1 { font-size: clamp(3rem, 8vw, 5.8rem); line-height: .94; margin: 12px 0 8px; 
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 12px;
 }
 
 .galeria img {
   width: 100%;
-  aspect-ratio: 1 / 1; 
-  object-fit: cover;   
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 10px;
   display: block;
 }
