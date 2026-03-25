@@ -542,27 +542,17 @@ apenas o uso, mas também os conceitos operacionais do ecossistema K8s.
 
 
 <section class="galeria">
-  <a href="https://grafana.com/api/dashboards/24267/images/19768/image" target="_blank" rel="noopener noreferrer">
-    <img src="https://grafana.com/api/dashboards/24267/images/19768/image" alt="Banco SQL Microsoft" />
-  </a>
-
-  <a href="https://grafana.com/api/dashboards/23669/images/18917/image" target="_blank" rel="noopener noreferrer">
-    <img src="https://grafana.com/api/dashboards/23669/images/18917/image" alt="CAMERA DVR" />
-  </a>
-
-  <a href="https://grafana.com/api/dashboards/22949/images/18218/image" target="_blank" rel="noopener noreferrer">
-    <img src="https://grafana.com/api/dashboards/22949/images/18218/image" alt="Dell PowerEdge R640 iDrac Server" />
-  </a>
-
-  <a href="https://grafana.com/api/dashboards/24854/images/20393/image" target="_blank" rel="noopener noreferrer">
-    <img src="https://grafana.com/api/dashboards/24854/images/20393/image" alt="DOCKER" />
-  </a>
-
-  <a href="https://grafana.com/api/dashboards/23950/images/19252/image" target="_blank" rel="noopener noreferrer">
-    <img src="https://grafana.com/api/dashboards/23950/images/19252/image" alt="Downdetector" />
-  </a>
+  <img src="https://grafana.com/api/dashboards/24267/images/19768/image" alt="Banco SQL Microsoft" />
+  <img src="https://grafana.com/api/dashboards/23669/images/18917/image" alt="CAMERA DVR" />
+  <img src="https://grafana.com/api/dashboards/22949/images/18218/image" alt="Dell PowerEdge R640 iDrac Server" />
+  <img src="https://grafana.com/api/dashboards/24854/images/20393/image" alt="DOCKER" />
+  <img src="https://grafana.com/api/dashboards/23950/images/19252/image" alt="Downdetector" />
 </section>
 
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightbox-close">&times;</span>
+  <img class="lightbox-image" id="lightbox-image" src="" alt="" />
+</div>
 
 
 
@@ -627,6 +617,39 @@ apenas o uso, mas também os conceitos operacionais do ecossistema K8s.
     </section>
   </main>
 
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts.js">
+
+      const imagensGaleria = document.querySelectorAll(".galeria img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lightbox-image");
+  const lightboxClose = document.getElementById("lightbox-close");
+
+  imagensGaleria.forEach((img) => {
+    img.addEventListener("click", () => {
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt;
+      lightbox.classList.add("active");
+    });
+  });
+
+  lightboxClose.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+    lightboxImage.src = "";
+  });
+
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      lightbox.classList.remove("active");
+      lightboxImage.src = "";
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      lightbox.classList.remove("active");
+      lightboxImage.src = "";
+    }
+  });
+  </script>
 </body>
 </html>
