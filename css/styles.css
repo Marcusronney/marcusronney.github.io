@@ -274,3 +274,28 @@ h1 { font-size: clamp(3rem, 8vw, 5.8rem); line-height: .94; margin: 12px 0 8px; 
   object-fit: cover;
   border-radius: 12px;
 }
+
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.galeria a {
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.galeria a:hover img {
+  transform: scale(1.05);
+}
